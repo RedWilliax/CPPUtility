@@ -1,2 +1,3 @@
+#pragma once 
 #include "pch.h"
-#include "Delegate.h"
+#include "Object.h"
