@@ -42,7 +42,7 @@ template<class U, typename T, typename ...args>
 inline void Delegate<U, T, args...>::Invoke(args... _args)
 {
 	for (int i = 0; i < dgt.size(); i++)
-		instance->dgt[i](_args...);
+		(instance->*dgt[i])(_args...);
 
 }
 
